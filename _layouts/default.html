@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/github-markdown-css/github-markdown-light.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ '/' | relative_url }}">Mon Site</a>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="columns">
+      <aside class="column is-2">
+        <!-- Sidebar gauche -->
+        <nav class="menu">
+          <p class="menu-label">Menu</p>
+          <ul class="menu-list">
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+            <!-- Ajouter d'autres liens ici -->
+          </ul>
+        </nav>
+      </aside>
+      <main class="column is-7">
+        <!-- Contenu principal -->
+        <main class="markdown-body">
+          {{ content }}
+        </main>
+      </main>
+      <aside class="column is-3">
+        <!-- Zone pour la table des matières -->
+        <nav class="menu">
+          <p class="menu-label">Menu</p>
+          <ul class="menu-list">
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+            <!-- Ajouter d'autres liens ici -->
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Mon Site</p>
+  </footer>
+</body>
+</html>

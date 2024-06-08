@@ -1,0 +1,19 @@
+{
+  "name": "craftthedocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass assets/css/main.scss assets/css/main.css",
+    "watch-css": "sass --watch assets/css/main.scss assets/css/main.css",
+    "postinstall": "cp node_modules/bulma/css/bulma.min.css assets/css/bulma.min.css && cp node_modules/github-markdown-css/github-markdown.css assets/css/github-markdown.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^1.0.1",
+    "github-markdown-css": "^5.5.1"
+  }
+}
